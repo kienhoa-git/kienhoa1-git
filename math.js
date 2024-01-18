@@ -287,6 +287,7 @@ function renderCourses(courses) {
              <h4>${course.name}</h4>
              <p>${course.description}</p>
              <button onclick="handleDeleteCourses(${course.id})">Xóa</button>
+             <button onclick="update(${course.id})">Sửa</button>
       </li>`
     })
     listCoursesBlock.innerHTML = htmls.join('')
