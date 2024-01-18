@@ -266,7 +266,7 @@ fetch(courseApi +'/'+ id,options)
   }
 })
 }
-function update(data) {
+function update(id) {
   var options = {
     method: 'PUT',
     body: JSON.stringify(data),
