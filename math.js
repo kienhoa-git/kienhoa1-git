@@ -305,4 +305,11 @@ function handleCreateForm() {
           getCourses(renderCourses)
         })
       }
-}  
+}
+// rest và spread
+function hignlight([first, ...rest], ...strings) {
+  return strings.reduce((acc,cur)=> [...acc, `<span>${cur}</span>`, rest.shift()],[first])
+}
+var brand = 'f8'
+var course = 'Javascript'
+hignlight `học lặp trình ${course} tại ${brand}!`  
